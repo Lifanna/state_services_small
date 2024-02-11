@@ -1,0 +1,113 @@
+.text-title {
+    font-size: 30px;
+}
+
+.bg-blue {
+    background-color: #e4ebfb;
+}
+
+.shadowed {
+    box-shadow: 0px 3px 5px 0 rgba(174, 174, 174, 0.5);
+}
+
+.br-25 {
+    border-radius: 5px;
+}
+
+.text-username {
+    font-size: 14px;
+}
+
+.text-input-subtitle {
+    font-size: 14px !important;
+}
+
+.btn-blue {
+    background-color: #0e4cd3;
+    color: white;
+}
+
+.text-primary-custom {
+    color: #2d5cbd;
+}
+
+.link-custom:link {
+    text-decoration: none;
+}
+
+.link-custom:visited {
+    text-decoration: none;
+}
+
+.link-custom:hover {
+    text-decoration: none;
+}
+
+.link-custom:active {
+    text-decoration: none;
+}
+
+.bg-darkblue {
+    background-image: linear-gradient(to bottom, #1f51e8, #597ded);
+}
+
+.bg-transparentblue {
+    background-color: #4d74ed;
+}
+
+.horizontal-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.text-username-wrapped {
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.btn-shapedblue {
+    background-color: #144bc2!important;
+    color: white!important;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.text-green {
+    font-size: 30px;
+    color: #44c274;
+}
+
+.border-top-thin {
+    border-top: 1px solid grey; /* Линия будет тонкой и черной, вы можете изменить цвет и толщину по своему усмотрению */
+}
+
+.text-done {
+    font-size: 40px;
+}
+
+.bg-whiteblue {
+    background-color: #f0f5f9;
+}
+
+.bordered-primary {
+    border: 1px solid #2d5cbd;
+    border-radius: 5px;
+}
+
+.vertical-ellipsis {
+    width: 20px; /* ширина вашего многоточия */
+    height: 20px; /* высота вашего многоточия */
+    line-height: 20px; /* чтобы текст находился по центру */
+    text-align: center; /* чтобы текст находился по центру */
+    color: #333; /* ваш цвет текста */
+    border-radius: 50%; /* чтобы сделать форму круглой */
+    font-weight: bold;
+}
+
+.text-red {
+    color: red!important;
+    font-size: 30px;
+}

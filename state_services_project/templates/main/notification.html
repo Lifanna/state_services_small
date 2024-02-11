@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container-fluid h-100 mb-0 pb-0">
+        <div class="row mb-0 pb-0">
+            <div class="col-12 text-center px-0">
+                <div class="d-flex justify-content-between align-items-center bg-white p-2 mt-2">
+                    <div class="text-title pl-1">
+                        <img class="img-fluid" width="30" height="30" src="/static/images/menu_navbar.png">
+                        <span class="text-primary-custom font-weight-bold">гос</span><span class="text-danger font-weight-bold">услуги</span>
+                    </div>
+                    <div class="mt-2 pr-2">
+                        <img class="img-fluid" width="30" height="30" src="/static/images/tie.png">
+                    </div>
+                </div>
+                <div class="col-12 text-left my-2 py-2">
+                    <div class="card br-25 shadowed my-2">
+                        <div class="card-body">
+                            <div class="d-flex flex-column">
+                                <div class="mb-2">
+                                    <a href="/business" class="link-custom text-primary-custom">Назад</a>
+                                </div>
+                                <div class="d-flex justify-content-between my-2">
+                                    <b>{{ notification.topic }}</b>
+                                    <div class="vertical-ellipsis">&#8942;</div>
+                                </div>
+                                <div class="d-flex align-items-center my-2">
+                                    <span class="text-secondary">Отправитель: {{ notification.footer_text }}, {{ notification.created_at|date:"d.m.Y H:i" }}</span>
+                                </div>
+                                <div class="d-flex align-items-center my-2">
+                                    <span class="text-secondary bordered-primary px-1">Вручено {{ notification.created_at|date:"d.m.Y" }}</span>
+                                    <span class="text-primary-custom ml-2">Подробнее</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    {% comment %} <span class="my-3">Здравствуйте</span>
+                                    <span class="my-3">
+                                        Вам направлено <b>постановление судебного пристава об окончании исполнительного производства,</b>
+                                        вынесенное в рамках исполнительного производства
+                                        № 173823/22/86009-ИП от 06.07.2022
+                                    </span>
+                                    <span class="my-3">
+                                        Вы можете узнать подробную информацию о <span class="text-primary-custom">ходе исполнительного производства</span>
+                                        или <span class="text-primary-custom">направить обращение</span> в ФССП России
+                                    </span>
+                                    <span class="my-3">
+                                        Отделение судебных приставов по г. Нефтеюганску и Нефтеюганскому району (код отдела: 86009)
+                                        Судебный пристав: Речапова Элина Булатовна
+                                        Телефон: +7(3463)23-85-14
+                                    </span> {% endcomment %}
+                                    {{ notification.text|safe }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

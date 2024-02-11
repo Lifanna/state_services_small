@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container-fluid h-100 bg-blue">
+        <div class="row">
+            <div class="col-12 text-center mt-4">
+                <div class="card br-25 shadowed">
+                    <div class="card-body row">
+                        <div class="col-12">
+                            <span class="text-title">
+                                <span class="text-primary-custom font-weight-bold">гос</span><span class="text-danger font-weight-bold">услуги</span>
+                            </span>
+                        </div>
+                        <div class="col-12 text-left d-flex align-items-center my-2">
+                            <img class="img-fluid" width="50" height="50" src="/static/images/user_avatar_circle.png">
+                            <div class="text-username d-flex flex-column ml-2">
+                                <span class="font-weight-bold">+7 982 515-49-68</span>
+                                <span class="text-primary-custom font-weight-bold">Другой пользователь</span>
+                            </div>
+                        </div>
+                        <div class="col-12 text-left my-2">
+                            <input type="password" class="form-control" placeholder="Пароль">
+                            <span class="text-primary-custom text-input-subtitle">Восстановить</span>
+                        </div>
+                        <div class="col-12 text-left my-2">
+                            <a href="/users_list" class="btn btn-blue btn-block br-25">Войти</a>
+                        </div>
+                        <div class="col-12 my-2">
+                            <span class="text-primary-custom text-input=subtitle">Не удается войти?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-2">
+                <div class="col-12 my-2 text-center">
+                    <span class="text-primary-custom text-input=subtitle">Зарегистрироваться</span>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div class="card br-25 shadowed">
+                    <div class="card-body row">
+                        <div class="col-6 text-left d-flex flex-column my-2">
+                            <img class="img-fluid" width="50" height="50" src="/static/images/lamp.png">
+                            <div class="text-username d-flex flex-column">
+                                <span class="text-primary-custom text-input-subtitle">Куда еще можно войти с паролем от Госуслуг?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
